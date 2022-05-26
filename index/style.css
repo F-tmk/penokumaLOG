@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*すべてのWebページに適応される*/
+html
+{
+	font-family: sans-serif;
+}
+body
+{
+	background-color: #ccffff;
+}
+h2
+{
+	color: #3f5170;
+	font-size: 22px;
+}
