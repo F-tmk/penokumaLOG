@@ -54,3 +54,9 @@ a:active{
 	padding-right: 180px;
 	font-size: 20px;
 }
+.nav ul {
+	margin: 0 0 0 0;
+	padding: 20px 10px 15px 20px;
+	background-image: url(C:/Users/tmkma/OneDrive/ドキュメント/GitHub/penokumaLOG/img/bgi.jpg);
+	background-repeat: repeat-x;
+}
