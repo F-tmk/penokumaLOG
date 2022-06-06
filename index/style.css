@@ -44,7 +44,7 @@ a:active{
 
 /*すべてのページに適応　-　ヘッダー　-　*/
 .logo {
-	margin: 50px 0 40px 0;
+	margin: 60px 0 50px 0;
 	line-height: 0;
 	text-align: center;
 }
@@ -52,5 +52,5 @@ a:active{
 	display: inline;
 	list-style-type: none;
 	padding-right: 200px;
-	font-size: 15px;
+	font-size: 20px;
 }
