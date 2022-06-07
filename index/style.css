@@ -51,8 +51,8 @@ a:active{
 .nav li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 130px;
-	padding-left: 100px;
+	padding-right: 90px;
+	padding-left: 120px;
 	font-size: 20px;
 }
 .nav ul {
