@@ -64,7 +64,7 @@ a:active{
 	margin: 0 0 0 0;
 	padding: 20px 10px 100px 20px;
 	background-image: url(footer-bg.png);
-	background-repeat: repeat-x;
+	background-repeat: norepeat-x;
 }
 .nav a:link
 	{
