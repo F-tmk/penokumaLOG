@@ -15,9 +15,10 @@ body {
 	margin:0 auto 0 auto;
 	max-width: 960px;
 }
-main {
+/*.news {
 	border: solid #00bfff;
 }
+*/
 h2 {
 	color: #3f5170;
 	font-size: 22px;
@@ -49,22 +50,22 @@ a:active{
 
 /*すべてのページに適応　-　ヘッダー　-　*/
 .logo {
-	margin: 50px 0 50px 0;
+	margin: 70px 0 50px 0;
 	line-height: 0;
 	text-align: center;
 }
 .nav li {
 	display: inline;
 	list-style-type: none;
-	padding-right: 50px;
-	padding-left: 100px;
+	padding-right: 15px;
+	padding-left: 75px;
 	font-size: 20px;
 }
 .nav ul {
 	margin: 0 0 0 0;
-	padding: 20px 10px 100px 20px;
+	padding: 20px 10px 10px 120px;
 	background-image: url(footer-bg.png);
-	background-repeat: norepeat-x;
+	background-repeat: no-repeat;
 }
 .nav a:link
 	{
@@ -91,13 +92,16 @@ a:active{
 	background-image:url(footer-bg.png);
 	background-repeat: no-repeat;
 	margin-top: 30px;
-	padding: 80px 15px 20px 15px;
+	padding: 50px 15px 20px 15px;
 	font-size: 12px;
 	color: 3f5170;
 }
 
 /* 個別のスタイル　*/
 /* index.html */
+iframe{
+	border: none;
+}
 .keyvisual{
 	margin: 15px 0 0 0;
 }
