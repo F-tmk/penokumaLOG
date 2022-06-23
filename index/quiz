@@ -1,0 +1,28 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>penokumaLOG</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="wrapper">
+	
+	<main>
+	<div class="p-quiz js-quiz-content">
+	    <h1 class="p-quiz-ttl">クイズコンテンツサンプル</h1>
+		<div class="p-quiz-next">
+		    <button class="c-btn js-quiz-start">開始</button>
+		</div>
+	</div>
+	</main>
+	<footer class="footer">
+		<p>&2022copy;Copyright penokuma. All rights reserved.</p>
+	</footer>
+</div>
+</body>
+</html>
