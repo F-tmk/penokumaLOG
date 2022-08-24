@@ -6,8 +6,28 @@
 <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
 </head>
 <div class="news-item">
-<time id="modify"></time>
-<script>
+
+
+	<p><strong>News</strong></p>
+	
+	<time id="modify"></time>
+	
+	<script >
+		/* 更新日の取得 */
+		const last = new Date(document.lastModified);
+		const year = last.getFullYear();
+		const month = last.getMonth() + 1;
+		const date = last.getDate();
+		/* 日付を書き換える */
+		const target = document.getElementById('modify');
+		target.textContent = year + '-' + month + '-' + date;
+	</script>
+	<p>Blog「<a href="lecture.html" target="_top">履修の記録</a>」を公開しました！</p>
+	<h3></h3>
+	<p>2022-6-17</p>
+	<!--
+	<time id="modify"></time>
+	<script>
 	/* 更新日の取得 */
 	const last = new Date(document.lastModified);
 	const year = last.getFullYear();
@@ -16,40 +36,43 @@
 	/* 日付を書き換える */
 	const target = document.getElementById('modify');
 	target.textContent = year + '-' + month + '-' + date;
-</script>
-	<p>News</p>
-	<p>2022/06/17<br><strong><s>授業をサボった</s>進捗</strong></p>
+	</script><br>
+	-->
+	<strong><s>授業をサボった</s>進捗</strong>
+	
 	<p>・ボックスごとの大きさを決めた</p>
 	<p>→一応ボックスの範囲内であればスクロールバーは出てこないからとりま回避したってことで(未解決)</p>
 	<p>・プロフィールのボックスを一から作り、(多分)完成させた</p>
 		<p>→Webフォント+cssのアニメーションにwkwkした(鯖からcallするのではなくソースファイルをダウンロードして自由に使用できるようにしたかったが結局残念無念また来世)</p>
 	<p>・navのアニメーションを(cssで)追加</p>
-		<p>→カーソルを合わせると下から上に幕が上がるから分かりやすいゾ！</p>
+		→カーソルを合わせると下から上に幕が上がるから分かりやすいゾ！</p>
 	<p><strong>これからの展望</strong></p>
-	<p>・画面サイズによって全体のレイアウトを変更できるようにする</p>
+	<p>・<s>画面サイズによって全体のレイアウトを変更できるようにする</s></p>
 	<p>・スクロールの向きでnavを固定表示させる</p>
 	<p>→tableを使えばできるとかなんとか聞いたけど、最初からではなく<mark>スクロールの途中で</mark>固定したいのだー(どうやらjQueryを使うらしいゾ...)</p>
-	<p>・なんやかんやでjsを学び始める時がきたらしい(jQueryだったりReact.jsだったり...)</p>
-	<p>・Webページの最終更新日を自動で表示したい！(オタクなんでも自動化しがち)</p>
-	<p>→js使う</p>
+	<p>・<s>なんやかんやでjsを学び始める時がきたらしい(jQueryだったりReact.jsだったり...)</s></p>
+	<p>・<s>Webページの最終更新日を自動で表示したい！(オタクなんでも自動化しがち)</p>
+	<p>→js使う</s></p>
 	<p>・プロフィール欄にTwitterやらのリンク貼ろうぜ(忘れてた)</p>
-	<p>・そろそろフォントを変えたらどうだい？</p>
-	<p>・文章間のこ↓</p>
-	<p>→<span>　　　　</span>こ↑の空間いらん(.news-itemか？)</p>
-	<p>最強な奴ら↓</p>
-	<p>・https://mutakko.info/font-awesome-animation/</p>
-	<p>・https://www.google.com/search?q=html+%E6%A4%9C%E7%B4%A2%E6%A9%9F%E8%83%BD+%E5%AE%9F%E8%A3%85&biw=1280&bih=648&sxsrf=ALiCzsYMZwg6xARu5qRXy8JG-Hwzni-wpw%3A1655389458225&ei=Ej2rYqqvDYyFoASB3aCgBw&oq=HTML+%E3%80%80%E3%80%80%E6%A4%9C%E7%B4%A2&gs_lcp=Cgdnd3Mtd2l6EAEYAjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAeEAcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADSgQIQRgASgQIRhgAUIQFWLsUYIA1aAFwAHgAgAFgiAHKA5IBATWYAQCgAQHIAQrAAQE&sclient=gws-wiz</p>
-	<p>https://web-camp.io/magazine/archives/90599</p>
-	<p>https://ja.reactjs.org/docs/add-react-to-a-website.html</p>
-	<p>https://webdesignday.jp/inspiration/technique/css/4166/<br>https://maku77.github.io/web/responsive/change-layout.html<br>https://web-design-textbook.com/recipe/update-date.html</p>
-	<p>------------------------------</p>
-	<p>2022/05/25<br>🎉penokumaLOG初開設🎉</p>
-	<p>2022/05/29の科学技術英語の単語テスト用にGoogle Formを作成しました。ご活用ください～</p>
+	<h3></h3>
+	<p>2022-5-25<!--<time id="modify"></time>
+		<script>
+		/* 更新日の取得 */
+		const last = new Date(document.lastModified);
+		const year = last.getFullYear();
+		const month = last.getMonth() + 1;
+		const date = last.getDate();
+		/* 日付を書き換える */
+		const target = document.getElementById('modify');
+		target.textContent = year + '-' + month + '-' + date;
+		</script><br>
+		--><br>🎉Penokumaログ初開設🎉</p>
+	<p>2022-5-29の科学技術英語の単語テスト用にGoogle Formを作成しました。ご活用ください～</p>
 		<tr>
-			<td><a href="https://forms.gle/qKtBrmk9xY7nHX1b7" target="_blank">数学英語s</a></td>
-			<td><a href="https://forms.gle/qKtBrmk9xY7nHX1b7" target="_blank">数学英語s</a></td><br>
+			<td><a href="https://forms.gle/qKtBrmk9xY7nHX1b7" target="_blank">数学英語s①</a></td>
+			<td><a href="https://forms.gle/qKtBrmk9xY7nHX1b7" target="_blank">数学英語s②</a></td><br>
 			
 		</tr>
-	<p>------------------------------</p>
+	<h3></h3>
 </div>
 </html>
