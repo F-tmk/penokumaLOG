@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+</head>
+<div class="news-item">
+
+
+	<p><strong>News</strong></p>
+	
+	<time id="modify"></time>
+	
+	<script >
+		/* 更新日の取得 */
+		const last = new Date(document.lastModified);
+		const year = last.getFullYear();
+		const month = last.getMonth() + 1;
+		const date = last.getDate();
+		/* 日付を書き換える */
+		const target = document.getElementById('modify');
+		target.textContent = year + '-' + month + '-' + date;
+	</script>
+	<p>Blog「<a href="lecture.html" target="_top">履修の記録</a>」を公開しました！</p>
+	<h3></h3>
+	<p>2022-6-17</p>
+	<!--
+	<time id="modify"></time>
+	<script>
+	/* 更新日の取得 */
+	const last = new Date(document.lastModified);
+	const year = last.getFullYear();
+	const month = last.getMonth() + 1;
+	const date = last.getDate();
+	/* 日付を書き換える */
+	const target = document.getElementById('modify');
+	target.textContent = year + '-' + month + '-' + date;
+	</script><br>
+	-->
+	<strong><s>授業をサボった</s>進捗</strong>
+	
+	<p>・ボックスごとの大きさを決めた</p>
+	<p>→一応ボックスの範囲内であればスクロールバーは出てこないからとりま回避したってことで(未解決)</p>
+	<p>・プロフィールのボックスを一から作り、(多分)完成させた</p>
+		<p>→Webフォント+cssのアニメーションにwkwkした(鯖からcallするのではなくソースファイルをダウンロードして自由に使用できるようにしたかったが結局残念無念また来世)</p>
+	<p>・navのアニメーションを(cssで)追加</p>
+		→カーソルを合わせると下から上に幕が上がるから分かりやすいゾ！</p>
+	<p><strong>これからの展望</strong></p>
+	<p>・<s>画面サイズによって全体のレイアウトを変更できるようにする</s></p>
+	<p>・スクロールの向きでnavを固定表示させる</p>
+	<p>→tableを使えばできるとかなんとか聞いたけど、最初からではなく<mark>スクロールの途中で</mark>固定したいのだー(どうやらjQueryを使うらしいゾ...)</p>
+	<p>・<s>なんやかんやでjsを学び始める時がきたらしい(jQueryだったりReact.jsだったり...)</s></p>
+	<p>・<s>Webページの最終更新日を自動で表示したい！(オタクなんでも自動化しがち)</p>
+	<p>→js使う</s></p>
+	<p>・プロフィール欄にTwitterやらのリンク貼ろうぜ(忘れてた)</p>
+	<h3></h3>
+	<p>2022-5-25<!--<time id="modify"></time>
+		<script>
+		/* 更新日の取得 */
+		const last = new Date(document.lastModified);
+		const year = last.getFullYear();
+		const month = last.getMonth() + 1;
+		const date = last.getDate();
+		/* 日付を書き換える */
+		const target = document.getElementById('modify');
+		target.textContent = year + '-' + month + '-' + date;
+		</script><br>
+		--><br>🎉Penokumaログ初開設🎉</p>
+	<p>2022-5-29の科学技術英語の単語テスト用にGoogle Formを作成しました。ご活用ください～</p>
+		<tr>
+			<td><a href="https://forms.gle/qKtBrmk9xY7nHX1b7" target="_blank">数学英語s①</a></td>
+			<td><a href="https://forms.gle/qKtBrmk9xY7nHX1b7" target="_blank">数学英語s②</a></td><br>
+			
+		</tr>
+	<h3></h3>
+</div>
+</html>
