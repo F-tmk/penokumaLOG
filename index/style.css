@@ -279,9 +279,6 @@ a:active{
 iframe{
 	border: none;
 }
-.keyvisual{
-	margin: 15px 0 0 0;
-}
 .box {
 	padding: 0px;
 	margin: 0px;
@@ -378,6 +375,17 @@ h3 {
 	font-size: 20px;           /* 文字サイズ */
 	background-color: var(--surface); /* 背景色指定 */
 }
+.blog-entry-title,
+.blog-entry-date {
+	margin: 0;
+}
+.blog-entry-title {
+	font-weight: 600;
+}
+.blog-entry-date {
+	margin-top: 8px;
+	font-size: 0.85em;
+}
 .contents {
 	padding: 0px 50px 20px 10px;
    	margin:  10px;              /* 外側の余白 */
@@ -418,7 +426,60 @@ h3 {
 	padding-left: 5px;
 
 }
-.schapter_sub h0{
+.schapter_sub{
 	float:left;
 	font-size: 100px;
+}
+
+@media (max-width: 760px) {
+	.wrapper {
+		width: calc(100% - 24px);
+	}
+
+	.logo {
+		font-size: clamp(30px, 10vw, 40px);
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+
+	.nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 6px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav li {
+		padding: 0;
+		font-size: 18px;
+	}
+
+	.btntext {
+		padding: 7px 8px;
+	}
+
+	.box {
+		display: block;
+		overflow: visible;
+	}
+
+	.intro,
+	.news {
+		width: calc(100% - 20px);
+		margin: 10px;
+	}
+
+	.profile {
+		padding: 24px 20px;
+	}
+
+	.container,
+	.container_Achi,
+	.container_lecture,
+	.contents {
+		margin: 10px;
+		padding: 28px 20px 24px;
+	}
 }
