@@ -1,9 +1,47 @@
 @charset "UTF-8";
 
 /*すべてのWebページに適応される*/
-.rtime{
-	float:right;
-	
+.header {
+	position: relative;
+}
+
+.rtime {
+	position: absolute;
+	top: 12px;
+	right: 0;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 7px 12px;
+	border: 1px solid rgba(112, 128, 144, 0.35);
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.8);
+	color: #3c454d;
+	box-shadow: 0 2px 8px rgba(60, 69, 77, 0.12);
+	font-size: 14px;
+}
+
+.rtime-label {
+	color: #708090;
+	font-size: 12px;
+}
+
+.rtime time {
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 600px) {
+	.rtime {
+		top: 8px;
+		right: 8px;
+		padding: 6px 9px;
+		font-size: 12px;
+	}
+
+	.rtime-label {
+		display: none;
+	}
 }
 html {
 	font-family:"HGMaruGothicMPRO","HG丸ｺﾞｼｯｸM-PRO";

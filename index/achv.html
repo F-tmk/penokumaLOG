@@ -4,8 +4,7 @@
 		<meta charset="UTF-8">
 		<html lang="ja">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<script src="timer.js">
-		</script>
+		<script src="timer.js" defer></script>
 		<table>
 			<tr><title>Penokumaログ</title></tr>
 			
@@ -17,11 +16,10 @@
 		<div class="wrapper">
 			<!-- ヘッダー -->
 			<header class="header">
-				<div class="rtime">
-					<script type="text/javascript">
-					var d=new Date();
-					document.write(d.toLocaleString());
-					</script>
+				<div class="rtime" aria-label="現在時刻">
+					<i class="fa-solid fa-clock" aria-hidden="true"></i>
+					<span class="rtime-label">現在時刻</span>
+					<time id="Realtime"></time>
 				</div>
 				<h1 class="logo"><a href="index.html" style="text-decoration:none; color:#708090; margin-left:170px" >Penokumaログ</a></h1>
 				<nav class="nav" flex-shrink:1;>
@@ -41,7 +39,6 @@
 	</div>
 	<main>
 		<h2>Achievements</h2>
-		<p id="Realtime"></p>
 	</main>
 	<footer class="footer">
 		<p>
