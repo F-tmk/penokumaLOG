@@ -67,10 +67,10 @@
 
 .rtime-date,
 .rtime-clock {
-	color: var(--time);
+	color: var(--heading);
 	font-size: 14px;
-	font-weight: 500;
-	letter-spacing: 0.02em;
+	font-weight: 600;
+	letter-spacing: 0.03em;
 }
 
 @media (max-width: 600px) {
