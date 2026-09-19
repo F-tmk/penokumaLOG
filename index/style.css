@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+:root {
+	--page-bg: #eef1f3;
+	--surface: #ffffff;
+	--text: #2f3a40;
+	--heading: #5e788a;
+	--nav: #435765;
+	--muted: #7b8b94;
+	--time: #84929a;
+	--link: #527b91;
+	--accent: #789a9f;
+	--border: #ccd5da;
+	--footer: #52616a;
+}
+
 /*すべてのWebページに適応される*/
 .header {
 	position: relative;
@@ -12,18 +26,22 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	padding: 7px 12px;
-	border: 1px solid rgba(112, 128, 144, 0.35);
+	padding: 5px 9px;
+	border: 1px solid var(--border);
 	border-radius: 999px;
-	background: rgba(255, 255, 255, 0.8);
-	color: #3c454d;
-	box-shadow: 0 2px 8px rgba(60, 69, 77, 0.12);
-	font-size: 14px;
+	background: rgba(230, 235, 238, 0.7);
+	color: var(--muted);
+	box-shadow: none;
+	font-size: 12px;
 }
 
 .rtime-label {
-	color: #708090;
+	color: var(--time);
 	font-size: 12px;
+}
+
+.rtime i {
+	color: var(--time);
 }
 
 .rtime time {
@@ -35,7 +53,7 @@
 	.rtime {
 		top: 8px;
 		right: 8px;
-		padding: 6px 9px;
+		padding: 5px 8px;
 		font-size: 12px;
 	}
 
@@ -52,7 +70,7 @@ html * {
 }
 body {
 	margin: 0 0 0 0;
-	background-color:  #d3d3d3;
+	background-color: var(--page-bg);
 }
 .wrapper {
 	margin:0 auto 0 auto;
@@ -63,13 +81,13 @@ p{
 	line-height: 2;
 }
 /*.news {
-	border: solid #00bfff;
+	border: solid var(--accent);
 }
 */
 h2 {
-	color: #3f5170;
+	color: var(--heading);
 	font-size: 22px;
-	border-bottom:5px dotted #3f5170;
+	border-bottom:5px dotted var(--accent);
 	margin-top: 0px;
 	margin-right: 10px;   		/*  	margin-right: 20px;		  */
 	margin-bottom: 30px;
@@ -82,16 +100,16 @@ h2 {
 }
 
 a:link {
-	color: #0000ff;
+	color: var(--link);
 }
 a:visited{
-	color: #0000ff;
+	color: var(--link);
 }
 a:hover {
-	color: #00bfff;
+	color: var(--accent);
 }
 a:active{
-	color: #7fffd4;
+	color: #6f9b9e;
 }
 
 /*すべてのページに適応　-　ヘッダー　-　*/
@@ -132,7 +150,7 @@ a:active{
     /*線の基点とするためrelativeを指定*/
   position:relative;
     /*ボタンの形状*/  
-  color:#262626;
+  color:var(--text);
     padding: 7px 20px;
   
   display:inline-block;
@@ -149,7 +167,7 @@ a:active{
 }
 
 .btntext:hover span{
-  color: #c0c0c0;
+	color: var(--surface);
 }
 
 /*線の設定*/
@@ -161,7 +179,7 @@ a:active{
   bottom:0;
   left:0;
     /*線の形状*/
-  background:#262626;
+  background:var(--nav);
   width:100%;
   height:3px;
     /*アニメーションの指定*/
@@ -177,22 +195,22 @@ a:active{
 /*-------------------------------------------*/
 .nav a:link
 	{
-	color: #3c454d;
+	color: var(--nav);
 	text-decoration: none;
 	}
 .nav a:visited
 	{
-	color: #3c454d;
+	color: var(--nav);
 	text-decoration: none;
 	}
 .nav a:hover
 	{
-	color: #3c454d;
+	color: var(--nav);
 	text-decoration: none;
 	}
 .nav a:active
 	{
-	color: #5a9bc0;
+	color: var(--accent);
 	text-decoration: none;
 	}
 /*すべてのページに適応　-　フッター　- */
@@ -205,14 +223,14 @@ a:active{
 	margin-top: 30px;
 	padding: 50px 15px 10px 20px;
 	font-size: 12px;
-	color: #3f5170;
+	color: var(--footer);
 }
 .full-flame{
 	padding: 10px 20px 10px 20px;
    	margin:  10px;              /* 外側の余白 */
 	border-radius:  20px;        /* 角丸指定 */
 	font-size: auto;           /* 文字サイズ */
-	background-color:  #c0c0c0; /* 背景色指定 */
+	background-color: var(--surface); /* 背景色指定 */
 }
 
 /* 個別のスタイル　*/
@@ -253,7 +271,7 @@ iframe{
    	margin:  10px;              /* 外側の余白 */
 	border-radius:  20px;        /* 角丸指定 */
 	font-size: 14px;           /* 文字サイズ */
-	background-color:  #c0c0c0; /* 背景色指定 */
+	background-color: var(--surface); /* 背景色指定 */
 }
 .profile{
 	padding: 30px 10px 20px 90px;
@@ -261,7 +279,7 @@ iframe{
 	text-align: center;
 	border-radius:  20px;        /* 角丸指定 */
 	font-size:  15px;           /* 文字サイズ */
-	background-color:  #c0c0c0; /* 背景色指定 */
+	background-color: var(--surface); /* 背景色指定 */
 	
 }
 .profile img{
@@ -277,9 +295,9 @@ iframe{
 }
 /* news.html */
 h3 {
-	color: #3f5170;
+	color: var(--heading);
 	font-size: 5px;
-	border-bottom:5px dotted #3f5170;
+	border-bottom:5px dotted var(--accent);
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 10px;
@@ -297,13 +315,13 @@ h3 {
 /**/
 
 .container a:visited{
-	color: #0000ff;
+	color: var(--link);
 }
 .container a:hover {
-	color: #00bfff;
+	color: var(--accent);
 }
 .container a:active{
-	color: #7fffd4;
+	color: #6f9b9e;
 }
 
 .container {
@@ -311,20 +329,20 @@ h3 {
    	margin:  10px;              /* 外側の余白 */
 	border-radius:  20px;        /* 角丸指定 */
 	font-size: 20px;           /* 文字サイズ */
-	background-color:  #c0c0c0; /* 背景色指定 */
+	background-color: var(--surface); /* 背景色指定 */
 }
 .container_Achi{
 	padding: 40px 50px 30px 50px;
    	margin:  10px;              /* 外側の余白 */
 	border-radius:  20px;        /* 角丸指定 */
 	font-size: 20px;           /* 文字サイズ */
-	background-color:  #c0c0c0; /* 背景色指定 */
+	background-color: var(--surface); /* 背景色指定 */
 }
 .contents {
 	padding: 0px 50px 20px 10px;
    	margin:  10px;              /* 外側の余白 */
 	font-size: 20px;           /* 文字サイズ */
-	background-color:  #c0c0c0; /* 背景色指定 */;
+	background-color: var(--surface); /* 背景色指定 */;
 }
 /* lecture.html */
 .child_ol li{
@@ -342,15 +360,15 @@ h3 {
    	margin:  20px;              /* 外側の余白 */
 	border-radius:  20px;        /* 角丸指定 */
 	font-size: 20px;           /* 文字サイズ */
-	background-color:  #c0c0c0; /* 背景色指定 */
+	background-color: var(--surface); /* 背景色指定 */
 }
 .container_lecture ol{
 	list-style: none;
 }
 .container_lecture h2{
-	color: #000;
+	color: var(--text);
 	font-size: 22px;
-	border-bottom:5px dotted #4169E1;
+	border-bottom:5px dotted var(--accent);
 	margin-top: 20px;
 	margin-right: 0px;
 	margin-bottom: 30px;
