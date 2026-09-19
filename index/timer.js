@@ -1,9 +1,13 @@
-const clockFormatter = new Intl.DateTimeFormat("ja-JP", {
+const dateFormatter = new Intl.DateTimeFormat("ja-JP", {
     timeZone: "Asia/Tokyo",
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
-    weekday: "short",
+    weekday: "short"
+});
+
+const timeFormatter = new Intl.DateTimeFormat("ja-JP", {
+    timeZone: "Asia/Tokyo",
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
@@ -18,7 +22,15 @@ function updateClock() {
     }
 
     const now = new Date();
-    clock.textContent = clockFormatter.format(now);
+    const date = document.createElement("span");
+    date.className = "rtime-date";
+    date.textContent = dateFormatter.format(now);
+
+    const time = document.createElement("span");
+    time.className = "rtime-clock";
+    time.textContent = timeFormatter.format(now);
+
+    clock.replaceChildren(date, time);
     clock.dateTime = now.toISOString();
 }
 
