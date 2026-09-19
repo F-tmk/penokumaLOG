@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 :root {
-	--page-bg: #d9e2e6;
-	--surface: #e7edef;
+	--page-bg: #cfd9de;
+	--surface: #dde6e9;
 	--text: #2f3a40;
-	--heading: #5e788a;
+	--heading: #3f5b69;
 	--nav: #435765;
-	--muted: #7b8b94;
-	--time: #84929a;
-	--link: #527b91;
-	--accent: #789a9f;
-	--border: #b2c0c7;
-	--footer: #52616a;
-	--card-shadow: 0 3px 12px rgba(67, 87, 101, 0.14);
+	--muted: #607781;
+	--time: #526a76;
+	--link: #3f687d;
+	--accent: #5f8b91;
+	--border: #93a7b0;
+	--footer: #344b58;
+	--card-shadow: 0 3px 12px rgba(52, 75, 88, 0.18);
 }
 
 /*すべてのWebページに適応される*/
@@ -30,7 +30,7 @@
 	padding: 5px 9px;
 	border: 1px solid var(--border);
 	border-radius: 999px;
-	background: rgba(219, 228, 232, 0.75);
+	background: rgba(201, 213, 218, 0.8);
 	color: var(--muted);
 	box-shadow: none;
 	font-size: 12px;
