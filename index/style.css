@@ -471,15 +471,17 @@ h3 {
 		margin: 10px;
 	}
 
-	.profile {
-		padding: 24px 20px;
-	}
-
 	.container,
 	.container_Achi,
 	.container_lecture,
 	.contents {
 		margin: 10px;
 		padding: 28px 20px 24px;
+	}
+}
+
+@media (max-width: 480px) {
+	.profile {
+		padding: 24px 20px;
 	}
 }
